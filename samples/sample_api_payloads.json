@@ -1,0 +1,40 @@
+{
+  "note": "Fictional sample payloads. Use current dates when sending borrow requests; IDs depend on your database.",
+  "create_author": {
+    "name": "Ada Lovelace",
+    "email": "ada@example.local",
+    "bio": "Sample author"
+  },
+  "create_book": {
+    "title": "Introduction to Programming",
+    "isbn": "9780131177055",
+    "genre": "programming",
+    "published_year": 2004,
+    "total_copies": 2,
+    "author_ids": [
+      1
+    ]
+  },
+  "create_member": {
+    "user": 2,
+    "membership_id": "LIB-0004",
+    "phone": "01700000000"
+  },
+  "create_borrow_record": {
+    "member": 1,
+    "book": 1,
+    "borrow_date": "2026-11-13",
+    "due_date": "2026-11-27"
+  },
+  "mark_returned": {
+    "returned_at": "2026-11-13"
+  },
+  "invalid_book": {
+    "title": "Bad ISBN",
+    "isbn": "1234567890123",
+    "total_copies": 0,
+    "author_ids": [
+      1
+    ]
+  }
+}
